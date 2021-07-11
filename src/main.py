@@ -7,6 +7,9 @@ from config import *
 # define a video capture object
 vid = cv2.VideoCapture(0)
 faceCascade = cv2.CascadeClassifier(CASC_PATH)
+import os
+
+print(os.path.exists(CASC_PATH))
 
 
 def take_image():
